@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monster Respawn Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <table id="monsterTable">
+        <thead>
+            <tr>
+                <th>Monster</th>
+                <th>Respawn Interval</th>
+                <th>Death Time</th>
+                <th>X</th>
+                <th>Y</th>
+                <th>Respawn Time</th>
+                <th>Time Remaining</th>
+                <th>Map</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Rows will be added dynamically -->
+        </tbody>
+    </table>
+
+    <!-- Map Modal Structure -->
+    <div id="mapModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="map-container">
+                <img id="mapImage" src="default-map.png" alt="Map" />
+                <img id="tombstone" src="tombstone-icon.png" alt="Tombstone" draggable="true" />
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
